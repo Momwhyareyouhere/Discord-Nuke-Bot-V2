@@ -1,8 +1,8 @@
 import aiohttp
 import asyncio
 
-BOT_TOKEN = "MTMyODc5NDgxNDM2MzIwOTg0OA.GoqbJq.mbiJFBf25Jp2vOCQtZntmDNbTKnb-p4Cn4Pwsg"
-GUILD_ID = "1354915112590381101"
+BOT_TOKEN = "BOT_TOKEN"
+GUILD_ID = "GUILD_ID"
 HEADERS = {
     "Authorization": f"Bot {BOT_TOKEN}",
     "Content-Type": "application/json"
