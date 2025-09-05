@@ -1,6 +1,7 @@
 CREATE=50
 CHANNEL_NAME=lol
 WEBHOOK_NAME=lol
+SERVER_NAME=get-nuked
 MESSAGE=@everyone get-nuked
 INTERVAL=1.5
 TOKEN=Bot_token
