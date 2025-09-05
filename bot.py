@@ -31,9 +31,10 @@ async def on_ready():
 async def nuke(ctx):
     config = load_config()
     create_count = int(config.get("CREATE", 5))
-    channel_name = config.get("CHANNEL_NAME", "fun-channel")
-    webhook_name = config.get("WEBHOOK_NAME", "fun-webhook")
-    message = config.get("MESSAGE", "Hello!")
+    channel_name = config.get("CHANNEL_NAME", "lol")
+    webhook_name = config.get("WEBHOOK_NAME", "lol")
+    message = config.get("MESSAGE", "@everyone")
+    
 
     guild = ctx.guild
 
