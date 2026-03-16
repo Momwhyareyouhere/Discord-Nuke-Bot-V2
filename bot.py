@@ -34,7 +34,7 @@ async def nuke(ctx):
     channel_name = config.get("CHANNEL_NAME", "lol")
     webhook_name = config.get("WEBHOOK_NAME", "lol")
     message = config.get("MESSAGE", "@everyone")
-    server_name = config.get("SERVER_NAME", "fun-server")
+    server_name = config.get("SERVER_NAME", "get-nuked")
     
 
     guild = ctx.guild
